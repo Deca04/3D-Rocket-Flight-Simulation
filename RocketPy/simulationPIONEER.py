@@ -145,10 +145,8 @@ test_flight.export_kml(file_name="test_flight.kml")
 import webbrowser
 
 def open_in_google_earth(file_path):
-    # Costruisci l'URL per Google Earth Web con il percorso del file KML
     google_earth_url = f'https://earth.google.com/web/@?earthdata={file_path}'
     
-    # Apri l'URL in una nuova finestra del browser predefinito
     webbrowser.open_new(google_earth_url)
 
 # Esempio di utilizzo
