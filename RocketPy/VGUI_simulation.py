@@ -103,7 +103,6 @@ def run_simulation():
             noise=(0, 8.3, 0.5),
         )
 
-        # Create Flight
         test_flight = Flight(
             rocket=Pioneer, environment=env, rail_length=2, inclination=90, heading=0
         )
@@ -124,7 +123,6 @@ def run_simulation():
     except Exception as e:
         messagebox.showerror("Error", str(e))
 
-# Create GUI
 window = tk.Tk()
 window.title("Rocket Simulation")
 window.geometry("600x400")
